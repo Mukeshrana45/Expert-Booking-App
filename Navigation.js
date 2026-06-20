@@ -2,7 +2,8 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import {createNativeStackNavigator} from '@react-navigation/native-stack'
 import { NavigationContainer } from '@react-navigation/native';
-import Onbording from './src/screens/Onbording'
+import Onbording from './src/screens/Onbording';
+import LoginScreen from './src/screens/LoginScreen';
 
 const Navigation = () => {
     const Stack =createNativeStackNavigator();
@@ -10,6 +11,7 @@ const Navigation = () => {
     <NavigationContainer>
         <Stack.Navigator initialRouteName='Onboarding'>
             <Stack.Screen name='Onboarding' component={Onbording} options={{headerShown:false}}></Stack.Screen>
+            <Stack.Screen name='loginScreen' component={LoginScreen}/>
         </Stack.Navigator>
 
     </NavigationContainer>

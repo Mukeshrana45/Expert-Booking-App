@@ -1,10 +1,8 @@
-import { Image, ImageBackground, StyleSheet, Text, View } from 'react-native'
-import React from 'react';
+import { ImageBackground ,StyleSheet, Text, View,Image } from 'react-native'
+import React from 'react'
 import Button from '../components/Button';
-import { useNavigation } from '@react-navigation/native';
 
-const Onbording = () => {
-  const navigation = useNavigation();
+const LoginScreen = () => {
   return (
     <View style={{flex:1}}>
         <ImageBackground source={require('../assets/img/splash.png')} style={{flex:1, justifyContent: 'center'}}>
@@ -21,18 +19,18 @@ const Onbording = () => {
         
        </View>
        <View style={{bottom:0,position:'absolute',width:'100%',padding:10}}>
-         <Button label={"Get Started"} onPress={() => navigation.navigate('loginScreen')} style={{backgroundColor:'#0b0ff7'}} />
+         <Button label={"Sign In"} style={{backgroundColor:'#0b0ff7'}} />
        </View>
         </ImageBackground>
     </View>
   )
 }
 
-export default Onbording
+export default LoginScreen
 
 const styles = StyleSheet.create({
-    image:{
-        width:'100%',
-        height: 900,
-    }
+    image: {
+    width: '100%',
+    height: 900,
+  },
 })
