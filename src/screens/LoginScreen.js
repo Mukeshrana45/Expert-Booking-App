@@ -1,8 +1,17 @@
 import { ImageBackground ,StyleSheet, Text, View,Image, TextInput } from 'react-native'
-import React from 'react'
+import React, { useCallback, useState } from 'react'
 import Button from '../components/Button';
+import { useNavigation } from '@react-navigation/native';
 
 const LoginScreen = () => {
+  const [mobileNumber, setMobileNumber] = useState('');
+   const navigation = useNavigation();
+  const onPressLogin= useCallback(() => {
+    if(mobileNumber?.length=== 10){
+      navigation.navigate("OtpVerify",{mobileNumber:mobileNumber,});
+    }
+
+  },[mobileNumber]);
   return (
     <View style={{flex:1}}>
         <View style={{flex:1,justifyContent: 'center',backgroundColor:'#300aec'}} >
@@ -14,18 +23,18 @@ const LoginScreen = () => {
          <View style={{justifyContent:'center',alignItems:'center'}}>
             <Text style={{fontSize:24,fontWeight:'bold',paddingVertical:10}}>Log in or Sign up</Text>
          </View>
-         <View style={{flexDirection:'row',height:50,borderColor:'gray',borderWidth:2,alignItems:'center',margin:10 ,borderRadius:10 }}>
+         <View style={{flexDirection:'row',height:50,borderColor:'gray',borderWidth:1,alignItems:'center',margin:10 ,borderRadius:10 }}>
           <Text style={{fontSize:18,paddingHorizontal:10}} >{'+91'} </Text>
-          <TextInput style={{padding:10,fontSize:18}} keyboardType='numeric' placeholder='Phone Number' maxLength={10} />
+          <TextInput style={{padding:10,fontSize:18}} onChangeText={setMobileNumber} keyboardType='numeric' placeholder='Phone Number' maxLength={10} />
            
 
          </View >
          <View style={{width:'100%',paddingVertical:15, paddingHorizontal:10}}>
-         <Button label={"Login with Mobile"} style={{backgroundColor:'#0b0ff7'}} />
+         <Button onPress={onPressLogin} label={"Login with Mobile"} style={{backgroundColor:'#0b0ff7'}} />
         </View>
        </View>
        <View style={{bottom:0,position:'absolute',width:'100%',padding:10}}>
-        <Button style={{backgroundColor:'#e5e4ef',flexDirection:'row',gap:4,borderColor:'black',borderWidth:2}}>
+        <Button style={{backgroundColor:'#e5e4ef',flexDirection:'row',gap:4,borderColor:'black',borderWidth:1}}>
           <Image source={require('../assets/img/google_icon.png')} />
           <Text style={{color:'black',fontSize:18}}>Continue with Google</Text>
 
