@@ -1,13 +1,18 @@
 import React from 'react';
-import {
-  
-  StyleSheet,
-} from 'react-native';
+import { StyleSheet } from 'react-native';
 import Navigation from './Navigation';
 
+import {
+  QueryClient,
+  QueryClientProvider,
+} from '@tanstack/react-query';
+const queryClient= new QueryClient();
 function App() {
+  
   return (
-     <Navigation />
+    <QueryClientProvider client={queryClient} >
+       <Navigation />
+    </QueryClientProvider>
   );
 }
 

@@ -5,6 +5,10 @@ import { NavigationContainer } from '@react-navigation/native';
 import Onbording from './src/screens/Onbording';
 import LoginScreen from './src/screens/LoginScreen';
 import OtpVerification from './src/screens/OtpVerification';
+import HomeScreen from './src/screens/HomeScreen';
+import SearchScreen from './src/screens/SearchScreen';
+import ExpertsList from './src/components/ExpertsList';
+import ExpertDetails from './src/screens/ExpertDetails';
 
 const Navigation = () => {
     const Stack =createNativeStackNavigator();
@@ -14,6 +18,10 @@ const Navigation = () => {
             <Stack.Screen name='Onboarding' component={Onbording} options={{headerShown:false}}></Stack.Screen>
             <Stack.Screen name='loginScreen' component={LoginScreen} options={{headerShown:false}}/>
             <Stack.Screen name='OtpVerify' component={OtpVerification} />
+            <Stack.Screen name='homeScreen' component={HomeScreen} options={{headerShown:false}}/>
+            <Stack.Screen name='searchScreen' component={SearchScreen} options={{headerShown:false}}/>
+            <Stack.Screen name='expertsList' component={ExpertsList} options={{headerShown:false}}/>
+            <Stack.Screen name='expertsDetails' component={ExpertDetails}/>
         </Stack.Navigator>
 
     </NavigationContainer>
