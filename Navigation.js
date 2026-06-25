@@ -9,6 +9,7 @@ import HomeScreen from './src/screens/HomeScreen';
 import SearchScreen from './src/screens/SearchScreen';
 import ExpertsList from './src/components/ExpertsList';
 import ExpertDetails from './src/screens/ExpertDetails';
+import BottomTab from './src/screens/BottomTab'
 
 const Navigation = () => {
     const Stack =createNativeStackNavigator();
@@ -18,10 +19,10 @@ const Navigation = () => {
             <Stack.Screen name='Onboarding' component={Onbording} options={{headerShown:false}}></Stack.Screen>
             <Stack.Screen name='loginScreen' component={LoginScreen} options={{headerShown:false}}/>
             <Stack.Screen name='OtpVerify' component={OtpVerification} />
-            <Stack.Screen name='homeScreen' component={HomeScreen} options={{headerShown:false}}/>
+            <Stack.Screen name='Main' component={BottomTab} options={{headerShown:false}}/>
             <Stack.Screen name='searchScreen' component={SearchScreen} options={{headerShown:false}}/>
             <Stack.Screen name='expertsList' component={ExpertsList} options={{headerShown:false}}/>
-            <Stack.Screen name='expertsDetails' component={ExpertDetails}/>
+            <Stack.Screen name='expertsDetails' component={ExpertDetails} options={{title: "Expert Details",headerTitleAlign: "center",}}/>
         </Stack.Navigator>
 
     </NavigationContainer>

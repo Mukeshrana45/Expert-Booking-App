@@ -22,6 +22,9 @@ export const expertsData = [
     rating: 4.8,
     fee:999,
     expertise: 'Software Development',
+    clients: "120+",
+    reviews: "320",
+    about: "Rahul Sharma is an experienced Software Development mentor with over 8 years of industry experience helping students and professionals build scalable applications and prepare for technical interviews."
   },
   {
     id: '2',
@@ -34,6 +37,11 @@ export const expertsData = [
     rating: 4.7,
     fee:799,
     expertise: 'Digital Marketing',
+    clients: "210+",
+    reviews: "165",
+    about:"Priya Verma is a Digital Marketing consultant with 6 years of experience in SEO, social media marketing, and performance campaigns. She helps businesses and creators grow their online presence.",
+
+
   },
   {
     id: '3',
@@ -46,6 +54,9 @@ export const expertsData = [
     rating: 4.9,
     fee:1199,
     expertise: 'Career Guidance',
+    clients: "320+",
+    reviews: "245",
+    about:"Amit Patel has 10 years of experience in Career Guidance. He has mentored hundreds of students and professionals in choosing the right career path, preparing resumes, and cracking interviews.",
   },
   {
     id: '4',
@@ -58,6 +69,10 @@ export const expertsData = [
     rating: 4.6,
     fee:1499,
     expertise: 'Startup Mentorship',
+    clients: "180+",
+    reviews: "140",
+    about:"Neha Singh is a Startup Mentor with 7 years of experience helping entrepreneurs validate ideas, create business models, and scale successful startups.",
+
   },
   {
     id: '5',
@@ -70,6 +85,9 @@ export const expertsData = [
     rating: 4.8,
     fee:1299,
     expertise: 'Data Science',
+    clients: "290+",
+    reviews: "210",
+    about:"Vikram Joshi is a Data Science expert with 9 years of experience in machine learning, AI, and analytics. He mentors learners and professionals in building practical data science projects.",
   },
   {
     id: '6',
@@ -82,6 +100,10 @@ export const expertsData = [
     rating: 4.7,
     fee:899,
     expertise: 'UI/UX Design',
+    clients: "170+",
+    reviews: "135",
+    about:"Ananya Gupta is a UI/UX Design specialist with 5 years of experience designing intuitive web and mobile applications. She guides designers in creating user-friendly digital products.",
+
   },
   {
     id: '7',
@@ -94,6 +116,10 @@ export const expertsData = [
     rating: 4.9,
     fee:1599,
     expertise: 'Finance',
+    clients: "360+",
+    reviews: "275",
+    about:"Rohit Mehta is a Finance consultant with 11 years of experience in investment planning, personal finance, and wealth management. He provides practical financial advice for individuals and businesses.",
+
   },
   {
     id: '8',
@@ -106,6 +132,9 @@ export const expertsData = [
     rating: 4.8,
     fee:1799,
     expertise: 'Legal Consultation',
+    clients: "240+",
+    reviews: "190",
+    about:"Sneha Kapoor is a Legal Consultant with 8 years of experience specializing in business law, contracts, and legal compliance. She offers clear and reliable legal guidance to clients.",
   },
   {
     id: '9',
@@ -118,6 +147,9 @@ export const expertsData = [
     rating: 4.7,
     fee:999,
     expertise: 'Public Speaking',
+    clients: "200+",
+    reviews: "155",
+    about:"Arjun Nair is a Public Speaking coach with 6 years of experience helping professionals, students, and entrepreneurs improve communication skills and stage confidence.",
   },
   {
     id: '10',
@@ -130,5 +162,8 @@ export const expertsData = [
     rating: 4.8,
     fee:799,
     expertise: 'Content Creation',
+    clients: "220+",
+    reviews: "170",
+    about:"Kavya Reddy is a Content Creation expert with 7 years of experience in branding, social media content, and storytelling. She helps creators and businesses produce engaging digital content."
   },
 ];

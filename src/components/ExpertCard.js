@@ -4,10 +4,10 @@ import { useNavigation } from '@react-navigation/native';
 const cardGap=16;
 const cardWidth=(Dimensions.get('window').width-cardGap*3)/2;
 
-const ExpertCard = ({id,name,image,specialty,...props}) => {
+const ExpertCard = ({id,name,image,specialty,style,...props}) => {
   const navigation= useNavigation();
   return (
-    <TouchableOpacity onPress={()=>navigation.navigate("expertsDetails",{expertId:id})} style={styles.container}>
+    <TouchableOpacity onPress={()=>navigation.navigate("expertsDetails",{expertId:id})} style={[styles.container,style]}>
       <Image source={image} style={styles.image} />
      <View style={{flexDirection:'row',justifyContent:'space-between',marginTop:5}}>
       <View>

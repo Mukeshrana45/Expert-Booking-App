@@ -22,7 +22,7 @@ const OtpVerification = ({route}) => {
     },[])
     const onOTPFilled= useCallback((text) => {
         console.log("Recived",text);
-        navigation.navigate("homeScreen");
+        navigation.navigate("Main");
     },[]);
   return (
     <View style={{flex:1,backgroundColor:'white'}}>

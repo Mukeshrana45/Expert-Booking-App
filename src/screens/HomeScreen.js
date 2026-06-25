@@ -5,7 +5,7 @@ import Categories from '../components/Categories/Categories';
 import SectionHeader from '../components/SectionHeader';
 import ExpertList from '../components/ExpertsList';
 import { useNavigation } from '@react-navigation/native';
-
+import HighestRatedExpert from '../components/HighestRatedExpert';
 const HomeScreen = ({horizontal}) => {
   const navigation = useNavigation();
   return (
@@ -14,6 +14,8 @@ const HomeScreen = ({horizontal}) => {
       <Categories/>
       <SectionHeader title={"Top Experts"} onPress={() => navigation.navigate('expertsList')} />
       <ExpertList horizontal/>
+      <SectionHeader title="⭐ Highest Rated Expert" />
+      <HighestRatedExpert />
     </View>
   )
 }
