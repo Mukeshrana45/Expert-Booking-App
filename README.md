@@ -1,97 +1,113 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# 📱 Expert Booking App
 
-# Getting Started
+A modern **Expert Booking** mobile application built with **React Native**. The app enables users to browse experts from different domains, explore expert profiles, and view consultation details through a clean and responsive user interface.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+---
 
-## Step 1: Start Metro
+## ✨ Features
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+- 🔐 OTP Authentication (UI)
+- 🏠 Modern Home Screen
+- 🔍 Search Bar UI
+- 📂 Expert Categories
+- 👨‍🏫 Top Experts Section
+- ⭐ Highest Rated Expert
+- 📄 Expert Details Screen
+- 💰 Consultation Fee Display
+- 📊 Expert Ratings & Reviews
+- 👥 Clients & Experience Information
+- 📱 Bottom Tab Navigation
+- ⚡ React Query Integration
+- 🎨 Responsive UI Design
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+---
 
-```sh
-# Using npm
-npm start
+## 🛠️ Tech Stack
 
-# OR using Yarn
-yarn start
+- React Native
+- JavaScript (ES6+)
+- React Navigation
+- React Query
+- React Native OTP Entry
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+├── api/
+├── assets/
+│   ├── img/
+│   └── screenshots/
+├── components/
+├── screens/
+└── store/
 ```
 
-## Step 2: Build and run your app
+---
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+## 📸 Screenshots
 
-### Android
+| Onboarding | Login | OTP |
+|------------|-------|-----|
+| ![](src/screenshots/Onboarding.png) | ![](src/screenshots/login.png) | ![](src/screenshots/otp.png) |
 
-```sh
-# Using npm
-npm run android
+| Home | Experts | Expert Details |
+|------|---------|----------------|
+| ![](src/screenshots/home.png) | ![](src/screenshots/experts.png) | ![](src/screenshots/expert-details.png) |
 
-# OR using Yarn
-yarn android
+---
+
+## 🚀 Getting Started
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/ExpertBookingApp.git
 ```
 
-### iOS
+### Navigate to Project
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
+```bash
+cd ExpertBookingApp
 ```
 
-Then, and every time you update your native dependencies, run:
+### Install Dependencies
 
-```sh
-bundle exec pod install
+```bash
+npm install
 ```
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+### Run Android
 
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
+```bash
+npx react-native run-android
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+---
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+## 🚀 Future Improvements
 
-## Step 3: Modify your app
+- 📅 Book Appointment Screen
+- 👤 Complete Profile Screen
+- 🔐 Google Sign-In Authentication
+- 📲 Real OTP Verification using Firebase
+- ⚙️ Settings Screen
+- 🔎 Search Experts Functionality
 
-Now that you have successfully run the app, let's make changes!
+---
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+## 👨‍💻 Author
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+**Mukesh Rana**
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+- NIT Trichy
+- React Native Developer
+- Passionate about Mobile App Development & Problem Solving
 
-## Congratulations! :tada:
+---
 
-You've successfully run and modified your React Native App. :partying_face:
+## ⭐ Support
 
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+If you like this project, consider giving it a **⭐ Star** on GitHub.
