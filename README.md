@@ -64,7 +64,7 @@ src/
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ExpertBookingApp.git
+git clone https://github.com/Mukeshrana45/ExpertBookingApp.git
 ```
 
 ### Navigate to Project
